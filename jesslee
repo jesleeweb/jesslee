@@ -1,0 +1,374 @@
+# ============================================
+#      ACT 1ST YEAR PYTHON TUTORIAL
+#       CREATED BY: JESLEE JIMENEZ
+# ============================================
+
+while True:
+    print("\n===========================================")
+    print("||      ACT 1ST YEAR PYTHON TUTORIAL    ||")
+    print("||        CREATED BY: JESLEE JIMENEZ     ||")
+    print("===========================================")
+    print("CHOOSE A LESSON:")
+    print("[1] Lesson 1: Introduction to Programming")
+    print("[2] Lesson 2: Python Basic Syntax")
+    print("[3] Lesson 3: Arithmetic Operators")
+    print("[4] Exit")
+    print("===========================================")
+
+    choice = input("Enter your choice (1-4): ")
+
+    if choice == '1':
+        print("\n===========================================")
+        print("||   MODULE 1: WELCOME TO PROGRAMMING    ||")
+        print("===========================================")
+
+        print("""
+As a first-year college student, diving into 
+programming is an exciting milestone!
+
+What is Python?
+Python is a high-level, interpreted programming 
+language known for its clean readability and power.
+
+Why Python is Great for College Beginners:
+1. Clean and readable syntax resembling English
+2. Versatile (Web Dev, AI, Data Science, Automation)
+3. Massive community and extensive libraries
+4. Great for building automation scripts and apps
+5. Highly in-demand in the modern tech industry
+
+Example:
+""")
+
+        print("Hello, College World!")
+        print("\nWelcome to your programming journey!")
+
+        # QUIZ 1
+        print("\nSHORT QUIZ! (Lesson 1)")
+        print("1. What is Programming?")
+        print("A. Giving a sequence of instructions to a computer")
+        print("B. Troubleshooting broken computer hardware")
+
+        answer = input("\nAnswer : ").upper()
+        if answer == "A":
+            print("Correct! Programming tells the computer what steps to execute.")
+        elif answer == "B":
+            print("Wrong! Hardware repair is physical; programming writes software instructions.")
+        else:
+            print("Invalid answer.")
+
+        print("\n2. Which programming language are we currently exploring?")
+        print("A. JavaScript")
+        print("B. Python")
+        answer = input("\nAnswer : ").upper()
+        if answer == "B":
+            print("Correct! Python is beginner-friendly and versatile.")
+        elif answer == "A":
+            print("Wrong! We are studying Python.")
+        else:
+            print("Invalid answer.")
+
+        print("\n3. What is a primary benefit of Python's syntax?")
+        print("A. It resembles plain English and is easy to read")
+        print("B. It requires strict binary machine code")
+        answer = input("\nAnswer : ").upper()
+        if answer == "A":
+            print("Correct! Python's high readability makes it ideal for learners.")
+        elif answer == "B":
+            print("Wrong! Python is high-level and handles compilation/interpretation under the hood.")
+        else:
+            print("Invalid answer.")
+
+    elif choice == '2':
+        print("\n=========================================")
+        print("||  MODULE 2: FUNDAMENTALS & SYNTAX    ||")
+        print("=========================================")
+
+        print("""
+Python syntax consists of the grammar rules 
+we follow to write valid code.
+
+1. Variables
+Containers used to store data values in memory.
+
+Example:
+student_name = "Jeslee"
+units = 21
+
+2. Core Data Types
+- String (str): Text values ("Hello")
+- Integer (int): Whole numbers (42)
+- Float (float): Decimal numbers (3.14)
+- Boolean (bool): True / False values
+
+3. Comments
+Notes for humans, completely ignored by the computer.
+Started with the # symbol.
+""")
+
+        student_name = "Jeslee"
+        year_level = 1
+        gpa_target = 1.25
+        is_enrolled = True
+
+        print("Student Name:", student_name)
+        print("Year Level:", year_level)
+        print("Target GPA:", gpa_target)
+        print("Enrolled Status:", is_enrolled)
+
+        # QUIZ 2
+        print("\nSHORT QUIZ! (Lesson 2)")
+        print("1. Which symbol denotes a single-line comment in Python?")
+        print("A. #")
+        print("B. //")
+
+        answer = input("\nAnswer : ").upper()
+        if answer == "A":
+            print("Correct! # creates comments in Python.")
+        elif answer == "B":
+            print("Wrong! // is used in languages like C++ or Java.")
+        else:
+            print("Invalid answer.")
+
+        print("\n2. Which built-in function outputs text to the console?")
+        print("A. display()")
+        print("B. print()")
+        answer = input("\nAnswer : ").upper()
+        if answer == "B":
+            print("Correct! print() displays your outputs.")
+        elif answer == "A":
+            print("Wrong! display() is not standard Python.")
+        else:
+            print("Invalid answer.")
+
+        print("\n3. Which of the following is a valid variable naming convention in Python?")
+        print("A. student_score")
+        print("B. student-score")
+        answer = input("\nAnswer : ").upper()
+        if answer == "A":
+            print("Correct! Python variables use snake_case with underscores.")
+        elif answer == "B":
+            print("Wrong! Hyphens (-) are interpreted as subtraction operators.")
+        else:
+            print("Invalid answer.")
+
+    elif choice == '3':
+        print("\n=====================================")
+        print("||  MODULE 3: ARITHMETIC OPERATORS   ||")
+        print("=====================================")
+
+        print("""
+Operators are used to perform mathematical 
+computations on variables and values.
+
+Operators:
++ Addition
+- Subtraction
+* Multiplication
+/ Division
+% Modulus (Remainder)
+** Exponentiation (Power)
+// Floor Division
+""")
+
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        print("\n--- RESULTS ---")
+        print("Addition:", num1 + num2)
+        print("Subtraction:", num1 - num2)
+        print("Multiplication:", num1 * num2)
+
+        if num2 != 0:
+            print("Division:", num1 / num2)
+            print("Modulus:", num1 % num2)
+            print("Floor Division:", num1 // num2)
+        else:
+            print("Division, Modulus, and Floor Division by zero are undefined.")
+
+        print("Exponentiation:", num1 ** num2)
+
+        # QUIZ 3
+        print("\nSHORT QUIZ! (Lesson 3)")
+        print("1. Which operator is used for addition in Python?")
+        print("A. *")
+        print("B. +")
+
+        answer = input("\nAnswer : ").upper()
+        if answer == "B":
+            print("Correct! + performs addition.")
+        elif answer == "A":
+            print("Wrong! * is used for multiplication.")
+        else:
+            print("Invalid answer.")
+
+        print("\n2. What does the modulus operator (%) return?")
+        print("A. The quotient of a division")
+        print("B. The remainder of a division")
+        answer = input("\nAnswer : ").upper()
+        if answer == "B":
+            print("Correct! Modulus (%) calculates the remainder.")
+        elif answer == "A":
+            print("Wrong! Division (/) returns the quotient.")
+        else:
+            print("Invalid answer.")
+
+        print("\n3. Which operator is used for exponentiation (raising to a power) in Python?")
+        print("A. ^")
+        print("B. **")
+        answer = input("\nAnswer : ").upper()
+        if answer == "B":
+            print("Correct! * is used for powers (e.g., 2 * 3 = 8.")
+        elif answer == "A":
+            print("Wrong! ^ is a bitwise XOR operator in Python.")
+        else:
+            print("Invalid answer.")
+
+    elif choice == '4':
+        print("\nThank you for using the ACT 1st Year Python Tutorial. Keep coding, Jeslee!")
+        break
+    else:
+        print("\nInvalid selection! Please enter a number between 1 and 4.")
+
+    print("following is a valid variable naming conversation in python?")
+
+    print("A. student_score")
+
+    print("B. student-score")
+
+    answer = input("\nAnswer : ").upper()
+
+    if answer == "A":
+
+        print("Correct! Python variables use snake_case with underscores.")
+
+    elif answer == "B":
+
+        print("Wrong! Hyphens (-) are interpreted as subtraction operators.")
+
+    else:
+
+        print("Invalid answer.")
+
+
+print("\n=====================================")
+
+print("||  Lesson 3: ARITHMETIC OPERATORS   ||")
+
+print("=====================================")
+
+print("""
+
+    Operators are used to perform mathematical 
+
+    computations on variables and values.
+
+
+    Operators:
+
+    + Addition
+
+    - Subtraction
+
+    * Multiplication
+
+    / Division
+
+    % Modulus (Remainder)
+
+    ** Exponentiation (Power)
+
+    // Floor Division
+
+    """)
+
+num1 = float(input("Enter first number: "))
+
+num2 = float(input("Enter second number: "))
+
+print("\n--- RESULTS ---")
+
+print("Addition:", num1 + num2)
+
+print("Subtraction:", num1 - num2)
+
+print("Multiplication:", num1 * num2)
+
+if num2 != 0:
+
+    print("Division:", num1 / num2)
+
+    print("Modulus:", num1 % num2)
+
+    print("Floor Division:", num1 // num2)
+
+else:
+
+    print("Division, Modulus, and Floor Division by zero are undefined.")
+
+print("Exponentiation:", num1 ** num2)
+
+# QUIZ 3
+
+print("\nSHORT QUIZ! (Lesson 3)")
+
+print("1. Which operator is used for addition in Python?")
+
+print("A. *")
+
+print("B. +")
+
+answer = input("\nAnswer : ").upper()
+
+if answer == "B":
+
+    print("Correct! + performs addition.")
+
+elif answer == "A":
+
+    print("Wrong! * is used for multiplication.")
+
+else:
+
+    print("Invalid answer.")
+
+print("\n2. What does the modulus operator (%) return?")
+
+print("A. The quotient of a division")
+
+print("B. The remainder of a division")
+
+answer = input("\nAnswer : ").upper()
+
+if answer == "B":
+
+    print("Correct! Modulus (%) calculates the remainder.")
+
+elif answer == "A":
+
+    print("Wrong! Division (/) returns the quotient.")
+
+else:
+
+    print("Invalid answer.")
+
+print("\n3. Which operator is used for exponentiation (raising to a power) in Python?")
+
+print("A. ^")
+
+print("B. **")
+
+answer = input("\nAnswer : ").upper()
+
+if answer == "B":
+
+    print("Correct! * is used for powers (e.g., 2 * 3 = 8.")
+
+elif answer == "A":
+
+    print("Wrong! ^ is a bitwise XOR operator in Python.")
+
+else:
+
+    print("Invalid answer.")
+
